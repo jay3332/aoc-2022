@@ -30,7 +30,7 @@ fn create_day(day: u8) -> Result<(), Box<dyn std::error::Error>> {
         .map(ToString::to_string)
         .take_while(|line| !line.starts_with("[workspace]"))
         .chain(Some(
-            r#"[workspace]\nmembers = [\n    "runner","#.to_string(),
+            "[workspace]\nmembers = [\n    \"runner\",".to_string(),
         ))
         .chain((1..=day).map(|day| format!(r#"    "day_{day:02}","#)))
         .chain(Some("]".to_string()))
