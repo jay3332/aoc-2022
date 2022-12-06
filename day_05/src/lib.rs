@@ -74,7 +74,10 @@ pub fn part_1(input: &'static str) -> Output<String> {
         }
     }
 
-    Ok(crates.into_iter().flat_map(|mut c| c.pop_back()).collect::<String>())
+    Ok(crates
+        .into_iter()
+        .flat_map(|mut c| c.pop_back())
+        .collect::<String>())
 }
 
 pub fn part_2(input: &'static str) -> Output<String> {
@@ -93,5 +96,8 @@ pub fn part_2(input: &'static str) -> Output<String> {
         crates[to].extend(chunk);
     }
 
-    Ok(crates.into_iter().flat_map(|mut c| c.pop_back()).collect::<String>())
+    Ok(crates
+        .into_iter()
+        .flat_map(|mut c| c.pop_back())
+        .collect::<String>())
 }
