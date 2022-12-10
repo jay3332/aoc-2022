@@ -70,7 +70,6 @@ pub fn part_2(input: &'static str) -> Output<String> {
                 queued = Some(count);
             }
             None => {
-                println!("{pixels:?}");
                 return Ok(unsafe {
                     std::mem::transmute::<_, [[u8; 40]; 6]>(pixels)
                         .map(|line| std::mem::transmute::<_, &str>(line.as_slice()).to_string())
