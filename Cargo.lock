@@ -50,6 +50,10 @@ name = "day_09"
 version = "0.1.0"
 
 [[package]]
+name = "day_10"
+version = "0.1.0"
+
+[[package]]
 name = "dotenv"
 version = "0.15.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -115,7 +119,7 @@ dependencies = [
 name = "runner"
 version = "0.1.0"
 dependencies = [
- "day_09",
+ "day_10",
 ]
 
 [[package]]
